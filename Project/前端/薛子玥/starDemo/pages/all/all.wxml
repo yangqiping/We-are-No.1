@@ -1,0 +1,8 @@
+<!--pages/all/all.wxml-->
+<view class="card" wx:for="{{dataListA}}">
+    <view class="little-card" bindtap="goToDetail" data-id="{{item.id}}">
+        <image src="{{item.img}}"></image>
+        <view class="name">{{item.name}}</view>
+        <view class="jieshao">{{item.jieshao}}</view>
+    </view>
+</view>

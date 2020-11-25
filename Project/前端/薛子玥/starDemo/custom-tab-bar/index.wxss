@@ -1,0 +1,53 @@
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: #FFF;
+  display: flex;
+  line-height: 1.2;
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(114, 138, 184, 0.12);
+}
+
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tab-bar-item .image {
+  width: 37rpx;
+  height: 37rpx;
+  margin-bottom: 8rpx;
+}
+.bulge {
+  background-color: #FFF;
+}
+.bulge .tab-bar-bulge {
+  position: absolute;
+  z-index: -99;
+  top: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FFF;
+  /* box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.08); */
+}
+.bulge .image{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  padding-top: 10px;
+}
+
+.tab-bar-item .tab-bar-view {
+  font-size: 10px;
+}
+#star-title{
+  color: #93B5CF;
+}

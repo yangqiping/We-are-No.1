@@ -1,0 +1,37 @@
+/* pages/all/all.wxss */
+page{
+    background-color: #f8f8f8;
+}
+.card{
+    display: flexbox;
+    flex-direction: row;
+    background-color: #fff;
+    width: 100%;
+    height: 180rpx;
+    padding-left: 25rpx;
+    margin-bottom: 15rpx;
+    padding-top: 20rpx;
+}
+.little-card>image{
+    float: left;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 100%;
+    justify-items: center;
+    margin-right: 28rpx;
+    margin-top:5rpx ;
+}
+.name{
+    color: #2F90B9;
+    font-size: 28rpx;
+    padding-top: 5rpx;
+}
+.jieshao{
+    margin-top: 10rpx;
+    color: #7F7F7F;
+    overflow: hidden;
+    font-size: 23rpx;
+    width: 507rpx;
+    height: 110rpx;
+    line-height: 36rpx;
+}

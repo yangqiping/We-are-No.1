@@ -1,0 +1,21 @@
+<!-- 启动页 -->
+<view class="container">
+   <view class="bgImg">
+        <image src="/img/启动页.png"/>
+    </view>
+    <block>
+        <view class="title">
+            <text>初探<text id="star-title">星辰</text></text>
+        </view>
+        <view class="content">
+            <view class="smalltitle">
+                <text>日月光华/旦复旦兮\n日月有常/<text id="star-title">星辰</text>有行</text>
+            </view>
+            <view class="bd">
+                <view class="confirm-btn" bindtap='goToIndex'>
+                    <image src="/icon/enter.png" class="btn-enter"/>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,59 @@
+{
+  "pages": [ 
+    "pages/start/start",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/add/add",
+    "pages/star/star",
+    "pages/my/my",
+    "pages/all/all",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#93B5CF",
+    "navigationBarTitleText": "初探星辰",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#2a2a2a",
+    "selectedColor": "#93B5CF",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icon/home0.png",
+        "selectedIconPath": "/icon/home1.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/icon/search0.png",
+        "selectedIconPath": "/icon/search1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "创作",
+        "iconPath": "/icon/add.png",
+        "selectedIconPath": "/icon/add.png"
+      },
+      {
+        "pagePath": "pages/star/star",
+        "text": "星辰",
+        "iconPath": "/icon/star0.png",
+        "selectedIconPath": "/icon/star1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": " 我家",
+        "iconPath": "/icon/my0.png",
+        "selectedIconPath": "/icon/my1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

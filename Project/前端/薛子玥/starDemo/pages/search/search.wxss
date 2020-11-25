@@ -1,0 +1,94 @@
+/* pages/search/search.wxss */
+page{
+    background-color: #f8f8f8;
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 45rpx;
+  padding-top: 20rpx;
+  width: 90%;
+}
+.search-input{
+  width: 110%;
+  height:70rpx;
+  margin-bottom: -110rpx;
+  background-color: #fff;
+  border-radius: 40rpx;
+  display: -webkit-flex;
+  margin-left: 40rpx;
+  border: 3.5rpx solid #8ABCD1;
+}
+.search-input image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-left: 0.8rem;
+  padding-top: 0.4rem;
+}
+.search-input input{
+  font-size: 28rpx;
+  color: #2a2a2a;
+  width: 380rpx;
+  padding-left: 75rpx;
+  padding-top: 11rpx;
+}
+.Search_btn {
+  display: inline-block;
+  width: 130rpx;
+  height: 58rpx;
+  font-size: 28rpx;
+  color: #93B5CF;
+  margin-top: 5rpx;
+  vertical-align: middle;
+  line-height: 58rpx;
+  text-align: center;
+}
+.Search_record {
+  width: 100%;
+  height: 1rpx;
+  margin-top: 150rpx;
+}
+ 
+.Search_record_text>text {
+  font-size: 28rpx;
+  color: #2A2A2A;
+  margin-left: 45rpx;
+}
+.hot_box_text>text {
+  font-size: 28rpx;
+  color: #2A2A2A;
+  margin-left: 45rpx;
+}
+.Search_record_text>image {
+  width: 37rpx;
+  height: 37rpx;
+  vertical-align: middle;
+  float: right;
+  margin-right: 35rpx;
+}
+ 
+.History-list {
+  margin-left: 45rpx;
+  margin-top: 28rpx;
+  margin-right: 20rpx;
+}
+.History-list>text {
+  display: inline-block;
+  height: 56rpx;
+  border-radius: 5px;
+  background:#E9F0F4;
+  max-width: 100%;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  color: #101010;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  box-sizing: border-box;
+  margin-right: 20rpx;
+}

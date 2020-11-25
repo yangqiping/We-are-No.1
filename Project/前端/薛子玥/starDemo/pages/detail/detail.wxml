@@ -1,0 +1,5 @@
+<text>pages/detail/detail.wxml</text>
+<view>{{detail.id}}</view>
+<view>{{detail.name}}</view>
+<image src="{{detail.img}}"></image>
+<view>{{detail.jieshao}}</view>

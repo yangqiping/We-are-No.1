@@ -1,0 +1,65 @@
+<!--pages/index/index.wxml-->
+<!-- 搜索框 -->
+<view class="search-container">
+    <navigator url="/pages/search/search" open-type="switchTab" class="search-wrap">
+        <view class="search-input" bindtap='goToSearch'>
+            <image src="/icon/搜索.png" />
+            <input type="text" placeholder="请输入节气/节日/经典诗词"/>
+        </view>
+    </navigator>
+</view>
+<!-- 节气框 -->
+<view class="jieqi-container">
+    <view class="top-tab">
+        <image class="sanjiao" src="/icon/sanjiao.png"></image>
+        <text class="zuo">廿四节气</text>
+        <image class="you" src="/icon/right.png"></image> 
+        <text class="all" bindtap="goToAll" data-value='jieqi'>全部节气</text>
+    </view>
+    <scroll-view class='wrapper' scroll-x="true">
+    <view class='horizontal-scroll' wx:for="{{dataList0}}" wx:key="{{index}}" bindtap="goToDetail" data-id="{{item.id}}">
+        <view class="little-card">
+            <image src="{{item.img}}"></image>
+            <text>{{item.name}}</text>
+        </view>
+  </view>
+</scroll-view>
+</view>
+<!-- 节日栏 -->
+<view class="jieqi-container">
+    <view class="top-tab">
+        <image class="sanjiao" src="/icon/sanjiao.png"></image>
+        <text class="zuo">传统节日</text>
+        <image class="you" src="/icon/right.png"></image> 
+        <text class="all" bindtap="goToAll" data-value='jieri'>全部节日</text>
+    </view>
+    <scroll-view class='wrapper' scroll-x="true">
+        <view class='horizontal-scroll' wx:for="{{dataList1}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="goToDetail">
+            <view class="little-card" url="#">
+                <image src="{{item.img}}"></image>
+                <text>{{item.name}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<!-- 每日推荐 -->
+<view class="daily-container">
+    <view class="top-tab">
+        <image class="sanjiao" src="/icon/sanjiao.png"></image>
+        <text class="zuo">每日诗词</text>
+        <text class="time">{{time}}</text>
+    </view>
+    <view class="daily" wx:for="{{daily}}" wx:key="{{index}}">
+        <image src="{{item.img}}" class="dImg" mode="widthFix"></image>
+        <view class="lunardate">{{ganzhi}}年{{chinese}}</view>
+        <view class="fenge"></view>
+        <view class="shici">
+            <view class="scTitle">{{item.title}}</view>
+            <view class="scWorker">{{item.worker}}</view>
+            <text class="scContent">{{item.content}}</text>
+        </view>
+    </view> 
+   
+</view>
+
+

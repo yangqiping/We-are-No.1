@@ -1,0 +1,162 @@
+/* pages/index/index.wxss */
+/* 搜索框 */
+page{
+  background-color: #f8f8f8;
+}
+.search-container{
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 25rpx;
+  box-sizing: border-box;
+  background-color: #93B5CF;
+  border-radius: 90rpx;
+  height: 270rpx;
+  width: 100%;
+  margin-top: -100rpx;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(114, 138, 184, 0.1);
+
+  }
+.search-input{
+  width: 110%;
+  height:70rpx;
+  margin-top: 100rpx;
+  background-color: #fff;
+  border-radius: 40rpx;
+  display: -webkit-flex;
+  margin-left: 40rpx;
+}
+.search-input image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-left: 0.8rem;
+  padding-top: 0.4rem;
+}
+.search-input input{
+  font-size: 14px;
+  color: #B0B0B0;
+  /* padding-left: 1rem; */
+  width: 380rpx;
+  padding-left: 75rpx;
+  padding-top: 10rpx;
+}
+/* 节气栏 */
+.jieqi-container{
+  position: relative;
+  top: 210rpx;
+  background-color: #fff;
+}
+.wrapper {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  margin-bottom: 35rpx;
+  padding-top: 35rpx;
+}
+.horizontal-scroll {
+  display: inline-block;
+  text-align: center;
+  margin-left: 25rpx;
+}
+.little-card{
+  height: 150rpx;
+  padding-right: 15rpx;
+  text-align: center;
+  padding-bottom: 15rpx;
+}
+.little-card image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+.little-card text {
+  display: flex;
+  flex-direction: column;
+  font-size: 23rpx;
+  color: #6B808A;
+}
+.top-tab{
+  padding-top: 35rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.top-tab .zuo{
+  float: left;
+  font-size: 27rpx;
+  color: #101010;
+  margin-top: -6rpx;
+  margin-left: 5rpx;
+}
+.top-tab .all{
+  float: right;
+  font-size: 27rpx;
+  color: #101010;
+  margin-top: -6rpx;
+  margin-right: 5rpx;
+}
+.sanjiao{
+  float: left;
+  width: 25rpx;
+  height: 25rpx;
+}
+.you{
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+}
+.time{
+  float: right;
+  font-size: 25rpx;
+  color: #6B808A;
+  margin-top: -6rpx;
+  margin-right: 15rpx;
+}
+.daily{
+  display: flexbox;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 50rpx;
+}
+.dImg{
+  margin-top: 50rpx;
+  border-radius: 50rpx;
+  width: 80%;
+}
+.daily-container{
+  position: relative;
+  top: 210rpx;
+  background-color: #fff;
+  margin-bottom: 100rpx;
+}
+.fenge{
+  margin: auto;
+  margin-top: 25rpx;
+  width: 45%;
+  height: 2rpx;
+  background-color: #8ABCD1;
+}
+.sc{
+  width: 75%;
+  padding-bottom: 75rpx;
+}
+.scTitle{
+  margin-top: 45rpx;
+  font-size: 35rpx;
+  color: #101010;
+  font-weight: 400;
+}
+.scWorker{
+  text-align: right;
+  margin-top: 10rpx;
+  margin-right: 120rpx;
+  margin-bottom: 12rpx;
+  font-weight: 300;
+}
+.scContent{
+  font-weight: 300;
+}
+.lunardate{
+  margin-top: 25rpx;
+}

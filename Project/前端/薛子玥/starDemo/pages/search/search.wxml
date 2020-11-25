@@ -1,0 +1,37 @@
+<!--pages/search/search.wxml-->
+<!-- 搜索框 -->
+<view class="search-container">
+  <view class="search-input" >
+      <image src="/icon/搜索.png" />
+      <input type="text" focus="{{name_focus}}"  placeholder="请输入节气/节日/经典诗词" bindinput='inputvalue' value="{{input_value}}"/>
+      <view class="Search_btn" bindtap='search'>{{SearchText}}</view>
+  </view>
+</view>
+<!-- 搜索记录 -->
+<view class="Search_record"></view>
+  <!--搜索记录盒子-->
+  <view class="Search_record_box">
+    <view class="Search_record_text">
+      <text>搜索记录</text>
+      <image bindtap='delete_list' src="/icon/delete.png"></image>
+    </view>
+    <!--记录词的盒子-->
+    <view class="History_box">
+      <view class="History-list">
+        <text wx:for="{{listarr}}" data-text="{{item}}" wx:key="key" bindtap='this_value'>{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <!--热门搜索盒子-->
+  <view class="hot_box">
+    <view class="hot_box_text">
+      <text>热门搜索</text>
+    </view>
+    <!--热门词的盒子-->
+    <view class="History_box">
+      <view class="History-list">
+        <text wx:for="{{hostarr}}" data-text="{{item}}" wx:key="key" bindtap='this_value'>{{item}}
+        </text>
+      </view>
+    </view>
+  </view>
