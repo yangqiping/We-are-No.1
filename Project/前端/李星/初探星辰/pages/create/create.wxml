@@ -1,0 +1,55 @@
+<!--pages/create/create.wxml-->
+<!-- <text>pages/create/create.wxml</text> -->
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">作诗</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">制作卡片</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+  <!-- 作诗 -->
+    <swiper-item >
+      <form bindsubmit="formSubmit">
+        <input type="text" placeholder="输入题目" class="inp" maxlength="20" ></input>
+        <textarea class="textarea" placeholder="输入正文" bindtap="input"></textarea>
+        <view class="image_content">
+          <view class='image' wx:for="{{img_url}}">
+            <image class="moment_img" src="{{item}}" mode="aspectFit"></image>
+          </view>
+          <view class='image' style='display:{{hideAdd?"none":"block"}}'>
+            <image bindtap="selectImage" class="moment_img1" src='../../icon/add.png'></image>
+          </view>
+        </view>
+        <view class="button_content">
+          <image class="yuncunchu" src="../../icon/yuncunchu.png" bindtap="save"></image>
+          <div class="save" bindtap="save">存草稿</div>
+          <button bindtap="send" class="fabu">发布</button>
+        </view>
+        
+        <!-- <image src="{{imagePath}}" mode="aspectFit"></image> -->
+        <!-- <div bindtap="selectImage"></div> -->
+      </form>
+    </swiper-item>
+    <!-- 制作卡片 -->
+    <swiper-item>
+      <scroll-view 
+        style='height:100%;' 
+        scroll-y >
+        <view class="card-image ">
+          <image src="" mode="aspectFit">
+            <text style="color:{{}};font-size:{{}}"></text>
+          </image>
+        </view>
+        <view class="card-text">
+          <text style="color:{{}};font-size:{{}}"></text>
+        </view>
+        <view class="font">
+          <view type="color" class="fontColor">文字颜色</view>
+          <view class="fontSize">文字大小</view>
+        </view>
+        <view class="switch-font" bindtap="switchFont">切换文字</view>
+        <view class="internet-background" bindtap="internetBackg">网络背景</view>
+        <view class="native-background " bindtap="nativeBackg">本地背景</view>
+        <view class="make-card" bindtap="makeTap">生成卡片</view>
+      </scroll-view>
+    </swiper-item>
+</swiper>

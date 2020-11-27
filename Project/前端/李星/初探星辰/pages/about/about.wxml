@@ -1,0 +1,13 @@
+<!--pages/about/about.wxml-->
+<!-- <text>pages/about/about.wxml</text> -->
+<view class="container">
+  <div class="about-div">
+    <div class="div1">关于<span class="span1">初探星辰</span></div>
+    <div class="div2">日月光华，旦复旦兮</div>
+    <div class="div3">日月有常，<span class="span1">星辰</span>有行</div>
+    <div class="div4"></div>
+    <div class="div5">初探星辰，帮助你了解诗词文化，在诗词的星空中探寻属于自己的星辰，在被越来越多新鲜事物充斥的现在，我们希望能够和大家一起了解古诗中的诗情画意和廿四节气中的美好故事，希望你永远心怀如诗情怀，看世间万物都浪漫心动</div>
+  </div>
+  
+
+</view>

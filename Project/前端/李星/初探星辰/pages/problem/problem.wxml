@@ -1,0 +1,22 @@
+<!--pages/problem/problem.wxml-->
+<!-- <text>pages/problem/problem.wxml</text> -->
+<view class="container">
+  <div class="problem-div">
+    <div class="div1">
+      <span class="span1">| </span>
+      <image class="image" src="../../icon/yijian.png"></image> 
+      <span class="span2">反馈意见</span>
+    </div>
+    <form bindsubmit="formSubmit">
+      <textarea class="textarea" placeholder="请输入你宝贵的意见或建议"></textarea>
+      <input class="inp" type="tel" name="phone" placeholder="您的联系方式（必填）">
+        <!-- <image class="image2" src="../../icon/weixiao.png"></image> -->
+      </input>
+      <span class="span3">欢迎您为我们提出宝贵的意见和建议</span>
+      <span class="span4">您留下的任何信息都将用来改善我们的软件</span>
+      <button class="button" form-type="submit">提交</button>
+    </form>
+   
+  </div>
+
+</view>

@@ -1,0 +1,196 @@
+/* pages/create/create.wxss */
+page{
+  background: #f8f8f8;
+  height: 100%;
+}
+.swiper-tab{
+  width: 100%;
+  text-align: center;
+  line-height: 54rpx;
+  background-color: #fff;
+}
+.swiper-tab-list{  
+  font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #101010;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.on{ 
+  color:#93B5CF;
+  border-bottom: 2rpx solid #93B5CF;}
+
+.swiper-box{ 
+  display: block; 
+  height: auto; 
+  width: 100%; 
+  /* overflow: hidden;  */
+  background-color: #fff;
+}
+.swiper-item1{
+  width: 100%;
+  /* height: 800rpx !important; */
+  background-color: #fff ;
+}
+.inp{ 
+  width: 90%;
+  height: 80rpx;
+  border-bottom: 2rpx solid #93B5CF;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+}
+.textarea{
+  width: 90%;
+  height: 400rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+}
+.image{
+  width:24%;
+  height: 100px !important;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  border-radius:10px;
+  border:1rpx solid #BBBBBE;
+  text-align: center;
+  line-height: 130px;
+ }
+ .moment_img{
+  width: 100%;
+  height: 100%;
+ }
+ .moment_img1{
+   width: 50px;
+   height: 50px;
+   
+ }
+ .image_content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+  margin-left:30rpx ;
+ }
+ .button_content{
+   width: 100%;
+   height: 80rpx;
+   margin-top:100rpx;
+ }
+ .yuncunchu{
+  width: 33px;
+  height: 33px;
+  margin-left:30rpx ;
+}
+.save{
+
+  font-size: 13px;
+  position: relative;
+  top:12px;
+  left: -35px;
+  /* margin-top: -300rpx !important;
+  margin-left: -65rpx; */
+}
+.fabu{
+  width: 75% !important;
+  height: 80rpx;
+  background-color: #93B5CF;
+  border-radius: 25px;
+  color:#fff;
+  margin-left: 150rpx !important;
+  margin-top: -65rpx;
+
+}
+.card-image{
+  width: 70%;
+  height: 315px;
+  border: 1px solid #93B5CF;
+  border-radius: 18px;
+  margin-left:15% ;
+  margin-top: 10%;
+}
+.card-text{
+  width: 70%;
+  height: 121px;
+  margin-left:15% ;
+  margin-top: 10%;
+  border: 1px solid #7494BF;
+  border-radius: 6px;
+  color: #101010;
+}
+.fontColor{
+  width: 35%;
+  height: 40px;
+  margin-top: 10%;
+  margin-left: 15%;
+  border: 1px solid #7494BF;
+  border-right: none;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  color: #101010;
+  text-align: center;
+  line-height: 40px;
+}
+.fontSize{
+  width: 35%;
+  height: 40px;
+  margin-top: -10%;
+  margin-left: 50.1%;
+  border: 1px solid #7494BF;  
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #101010;
+  text-align: center;
+  line-height: 40px;
+}
+.switch-font{
+  width: 30%;
+  height: 30px;
+  margin-top: 10%;
+  margin-left: 15%;
+  border: 1px solid #7494BF;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 30px;
+  color: #7494BF;
+}
+.internet-background{
+  width: 30%;
+  height: 30px;
+  margin-top: -8%;
+  margin-left: 55%;
+  border: 1px solid #7494BF;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 30px;
+  color: #7494BF;
+}
+.native-background{
+  width: 30%;
+  height: 30px;
+  margin-top: 5%;
+  margin-left: 15%;
+  border: 1px solid #7494BF;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 30px;
+  color: #7494BF;
+}
+.make-card{
+  width: 30%;
+  height: 30px;
+  margin-top: -8%;
+  margin-left: 55%;
+  border: 1px solid #7494BF;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 30px;
+  color: #7494BF;
+}
+ 
